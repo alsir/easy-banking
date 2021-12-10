@@ -1,0 +1,211 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	height: 10%;
+	margin: 1% ;
+}
+header button.to-dis{
+	position: absolute;
+	width: 10%;
+	height: 60%;
+	top: 10px;
+	right: 20px;
+	border: none;
+	background-color: inherit;
+}
+header img{
+	margin: 2.5% 0 2% 0;
+}
+
+ ul.menu{
+ 	background-color: white;
+	top: 25px;
+	margin: 10%;
+	width: 80%;
+	height: 120%;
+	position: absolute;
+	text-align: center;
+	padding-bottom: 52%;
+	padding-top: 6%;
+	border-radius: 5px;
+	
+}
+.menu li{
+	align-self: center;
+	list-style-type: none;
+	color:  hsl(212, 27%, 19%);
+	padding: 5%;
+	padding-bottom: 0;
+	font-size: 1.2rem;
+	padding-top: 4%;
+ background-color: white;
+ opacity:0.8 ;
+}
+li button{
+	display: none;
+}
+.intro{
+	overflow: hidden;
+	text-align: center;
+}
+.intro img{
+   background-image: url(./images/bg-intro-mobile.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+	width: 100%;
+	padding: 0% 10% 2% 10%;
+	margin-top: -30%;
+}
+.intro h2{
+  color: hsl(233, 26%, 24%);
+  font-size: 2.5rem;
+  padding: 10%;
+  padding-bottom: 0;
+}
+.intro p{
+	margin: 5%;
+	font-size: 1.2rem;
+	color: hsl(233, 8%, 62%);
+	padding: 0 8% 0 8%;
+}
+button.request-button {
+	width: 40%;
+	height: 50px;
+	border: none;
+	border-radius: 25px;
+	margin: 3%;
+	background-image:linear-gradient(to right, hsl(136, 65%, 51%) , hsl(192, 70%, 51%)); 
+	color: white;
+	font-size: 1rem;
+}
+button.request-button:hover{
+	opacity: 0.8;
+}
+.why-cont{
+	background-color: hsl(220, 16%, 96%);
+	padding: 5%;
+	text-align: center;
+}
+.why-cont img{
+  width: 18%;
+  height:auto;
+  margin-bottom: 2%;
+}
+.why-cont h4{
+ font-size: 1.8rem;
+ color:  hsl(233, 26%, 24%);
+}
+.why-cont p{
+	margin: 5%;
+	font-size: 1.2rem;
+	color: hsl(233, 8%, 62%);
+	padding: 0 3% 0 3%;
+	
+}
+.why-easy{
+	padding: 3%;
+	text-align: center;
+}
+.why-easy h3{
+  color: hsl(233, 26%, 24%);
+  font-size: 2.3rem;
+  padding: 10%;
+  padding-bottom: 0;
+}
+.why-easy p{
+	margin: 5%;
+	font-size: 1.2rem;
+	color: hsl(233, 8%, 62%);
+	padding: 0 8% 0 8%;
+}
+.articles{
+	background-color: hsl(220, 16%, 97%);
+}
+.latest-title{
+	color: hsl(233, 26%, 24%);
+	margin:20% 10% 10% 10%;
+	font-size: 2.3rem;
+	text-align: center;
+}
+.box{
+	background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0% 5% 10% 5%;
+  border-radius: 10px;
+}
+.box img{
+	height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box h3{
+	padding: 3% 5% 0 5%;
+	font-size: 1.7rem;
+}
+.box p{
+	padding: 5%;
+	font-size: 1.1rem;
+	color: hsl(233, 8%, 62%);
+}
+p.writer{
+	color:hsl(233, 8%, 62%);
+	padding: 8% 5% 0 5%;
+	font-size: 0.9rem;
+	opacity: 0.7;
+}
+footer{
+	background-color: hsl(233, 26%, 24%);
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+i img{
+	filter: invert(100%);
+	fill: white;
+	margin: 10% 10% 5% 10%;	
+}
+.icons img {
+	margin: 2%;
+	padding-bottom: 5%;
+}
+footer ul{
+	display: flex;
+	flex-direction: column;
+	position: unset;
+}
+footer li{
+	font-size: 1.2rem;
+	margin: 3%;
+	list-style: none;
+}
+footer p{
+	opacity: 0.6;
+	font-size: 1.1rem;
+	padding: 2%;
+	padding-bottom: 10%;
+}
+@media (min-width: 600px){
+	 .intro{
+	 	display: flex;
+	 	flex-direction:row-reverse;
+	 }
+	 .intro img{
+	 	background-image: url(./images/bg-intro-desktop.svg);
+	 	width: 60%;
+	 	margin-top: 0;
+	 }
+}
+
