@@ -39,6 +39,7 @@ header img{
 	padding-bottom: 52%;
 	padding-top: 6%;
 	border-radius: 5px;
+	display: none;
 	
 }
 .menu li{
@@ -54,6 +55,10 @@ header img{
 }
 li button{
 	display: none;
+}
+li:hover{
+	border-bottom: hsl(136, 65%, 51%);
+
 }
 .intro{
 	overflow: hidden;
@@ -137,6 +142,11 @@ button.request-button:hover{
 	margin:20% 10% 10% 10%;
 	font-size: 2.3rem;
 	text-align: center;
+
+}
+.box-container{
+		display: flex;
+	  flex-direction: column;
 }
 .box{
 	background-color: white;
@@ -144,6 +154,7 @@ button.request-button:hover{
   flex-direction: column;
   margin: 0% 5% 10% 5%;
   border-radius: 10px;
+  width: 80vw;
 }
 .box img{
 	height: 300px;
@@ -198,14 +209,171 @@ footer p{
 	padding-bottom: 10%;
 }
 @media (min-width: 600px){
-	 .intro{
+	body{
+	   overflow: visible;	
+	}
+	 header img{
+	 	z-index: 3;
+	 }
+	 button#menu-button{
+	 	display:none ;
+	 }
+	 ul.menu{
+	 	display:flex;
+	 	flex-direction: row;
+	 	height: 10%;
+	 	width: 80%;
+    padding-top: 0;
+    margin-top: 1.5%;
+    padding-bottom: 3%;
+    padding-left: 20%;
+    z-index: 2;
+	 }
+	 ul.menu li.item{
+	 	width: 13%;
+	 	padding: 1.5% 3% 0 3%;
+	 	margin: 0;
+	 }
+	 li button.request-button{
+	 	display: flex;
+	 	width: 60%;
+    text-align: center;
+	 	padding: 6% 5% 0 6%;
+	 	margin-left: 12vw;
+	 	margin-top: -1%;
+	 }
+	
+	 ul li.item:hover{
+	 	border-bottom: 2px solid hsl(136, 65%, 51%);
+	 }
+	 	 .intro{
 	 	display: flex;
 	 	flex-direction:row-reverse;
+	 	position: relative;
+
 	 }
 	 .intro img{
 	 	background-image: url(./images/bg-intro-desktop.svg);
-	 	width: 60%;
+	 	width: 70%;
+	 	height: 120%;
 	 	margin-top: 0;
+	 	margin: 0 -17% -40% 0;
+	 	transform: translateY(-10%);
+	 	z-index: 2;
 	 }
+	 .next-{
+	 	margin-top: 0;
+	 	padding: 5%;
+	 }
+	 .next- h2{
+	 	padding: 0;
+	 }
+	 .next- p{
+	 	margin: 0;
+	 	padding: 10% 15% 5% 2%;
+	 }
+	 .why-cont{
+	 	display: flex;
+	 	flex-direction: column;
+	 	z-index: 1;
+	 	
+	 }
+	 .why-easy{
+	 	text-align: left;
+	 	margin: 0;
+	 	padding: 0;
+	 }
+	 .why-easy h3 {
+    font-size: 2.1rem;
+    padding: 0;
+    padding-bottom: 1%;
+   }
+   .why-easy p{
+   	margin: 4% 2% 5% 0;
+   	padding-left: 0;
+   }
+	 .row{
+	 	display: flex;
+	 	flex-direction: row;
+	 	text-align: left;
+	 	margin: 0;
+	 	padding: 0;
+	 }
+	 .row div{
+	 	width: 25%;
+	 }
+	 .row img{
+    width: 40%;
+    margin-left: 0;
+	 }
+	 .row h4{
+	 	font-size: 1.3rem;
+	 	margin: 2% 2% 5% 0;
+	 }
+	 .row p{
+    margin: 5% 3% 2% 0;
+    font-size: 1rem;
+    padding: 0 3% 0 0;
+}
+	 }
+	 .box-container {
+	 	display: flex;
+	 	flex-direction: row;
+	 	padding: 5%;
+	 }
+	 .latest-title {
+    margin: 6% 0% -3% 5%;
+    font-size: 2.3rem;
+    text-align: left;
+}
+	 .box-container .box{
+	 	width: 23%;
+	 	height: auto;
+	 	margin: 1%;
+	 	padding:0;
+	 }
+	 .box img{
+	 	width: 100%;
+	 	height: auto;
+	 	margin: 0;
+	 	padding: 0;
+	 	border-radius: 0;
+	 }
+	 .box p{
+	 	font-size: 0.9rem;
+	 }
+	 .box p.writer{
+	 	font-size: 0.6rem;
+	 }
+	 .box h3{
+	 	font-size: 1.3rem;
+	 }
+	 footer{
+	 	display: flex;
+	 	flex-direction: row;
+	 	text-align:left ;
+	 	padding: 0 5% 0 5%;
+	 }
+	 footer .footer-box{
+	 	width: 24%;
+	 	padding-top: 2%;
+	 }
+	 .footer-box button{
+	 	width: 60%;
+	 	margin-bottom: 10%;
+	 }
+	 .footer-box li{
+	 	margin-top: 4%;
+	 	font-size: 1.1rem;
+	 	width: 40%;
+	 }
+	 .footer-box li:hover{
+	 	border-bottom: 2px solid hsl(136, 65%, 51%);
+	 }
+	 .footer-box img{
+	 	margin-bottom: 12%;
+	 }
+
+
 }
 

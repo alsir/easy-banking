@@ -7,32 +7,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Easybank landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-  </style>
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
   <header>
 <img src="./images/logo.svg" alt="logo">
-<button class="to-dis"><img src="./images/icon-hamburger.svg" alt="opening button"></button>
+<button id="menu-button" class="to-dis"><img src="./images/icon-hamburger.svg" alt="opening button"></button>
   <ul class="menu">
-  <li>Home</li>
-  <li>About</li>
-  <li>Contact</li>
-  <li>Blog</li>
-  <li>Careers</li>
-  <li><button class="request-button"> Request Invite</button></li>
+  <li class="item">Home</li>
+  <li class="item">About</li>
+  <li class="item">Contact</li>
+  <li class="item">Blog</li>
+  <li class="item">Careers</li>
+  <li class="last"><button class="request-button"> Request Invite</button></li>
 </ul>
 </header>
 
 <div class="intro" >
   <img src="./images/image-mockups.png" alt="">
-<div>
+<div class="next-">
   <h2>Next generation digital banking</h2>
 
   <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
@@ -48,7 +41,7 @@
   <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
   your finances like never before.</p>
   </div>
-  <div >
+  <div class="row" >
   <div >
   <img src="./images/icon-online.svg" alt="">
   <h4>Online Banking</h4>
@@ -77,7 +70,7 @@
   </div>
  <div class="articles">
   <h3 class="latest-title">Latest Articles</h3>
-  <div >
+  <div class="box-container">
   <div class="box">
   <img src="./images/image-currency.jpg" alt="currency">
   <p class="writer">By Claire Robinson</p>
@@ -108,7 +101,7 @@
 </div>
 </div>
 <footer>
-  <div>
+  <div class="footer-box">
   <i><img src="./images/logo.svg" alt="logo"></i>
   <div class="icons">
     <a><img src="./images/icon-facebook.svg" alt="facebook"></a>
@@ -118,21 +111,23 @@
     <a><img src="./images/icon-youtube.svg" alt="youtube"></a>
   </div>
   </div>
-  <ul>
+  <ul class="footer-box" >
   <li>About Us</li>
   <li>Contact</li>
   <li>Blog</li>
   </ul>
-  <ul>
+  <ul class="footer-box">
   <li>Careers</li>
   <li>Support</li>
   <li>Privacy Policy</li>
   </ul>
-  <div>
+  <div class="footer-box">
   <button class="request-button">Request Invite</button>
 
   <p>© Easybank. All Rights Reserved</p>
 </div>
 </footer>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
